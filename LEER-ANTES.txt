@@ -1,0 +1,1 @@
+Carpeta destinada a los artículos Markdown del blog. El CMS requiere completar OAuth antes de utilizarse.

@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: adalbertoalmada-debug/myasociados-web
+  branch: main
+  # Pendiente: configurar OAuth compatible antes de habilitar el panel.
+  base_url: REEMPLAZAR_CON_URL_DEL_WORKER_OAUTH
+  auth_endpoint: auth
+media_folder: assets/uploads
+public_folder: /assets/uploads
+publish_mode: editorial_workflow
+locale: es
+collections:
+  - name: blog
+    label: Artículos del blog
+    folder: content/blog
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Fecha, name: date, widget: datetime }
+      - { label: Categoría, name: category, widget: select, options: ["Derecho laboral", "Salud", "ART", "Sucesiones", "Novedades jurídicas"] }
+      - { label: Imagen, name: image, widget: image, required: false }
+      - { label: Descripción, name: description, widget: text }
+      - { label: Contenido, name: body, widget: markdown }
