@@ -1,9 +1,9 @@
 backend:
   name: github
   repo: adalbertoalmada-debug/myasociados-web
-  branch: main
+  branch: prueba-cms
   # Pendiente: configurar OAuth compatible antes de habilitar el panel.
-  base_url: REEMPLAZAR_CON_URL_DEL_WORKER_OAUTH
+  base_url: https://myasociados-auth.myasociados.workers.dev
   auth_endpoint: auth
 media_folder: assets/uploads
 public_folder: /assets/uploads
