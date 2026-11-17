@@ -3,8 +3,8 @@ backend:
   repo: adalbertoalmada-debug/myasociados-web
   branch: prueba-cms
   # Pendiente: configurar OAuth compatible antes de habilitar el panel.
-  base_url: https://myasociados-auth.myasociados.workers.dev
-  auth_endpoint: auth
+base_url: https://decap-proxy.myasociados.workers.dev
+auth_endpoint: /auth
 media_folder: assets/uploads
 public_folder: /assets/uploads
 publish_mode: editorial_workflow
